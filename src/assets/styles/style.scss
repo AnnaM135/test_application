@@ -95,7 +95,12 @@ img {
 .container {
     max-width: $containerWidth;
     margin: 0 auto;
-    padding-left: $containerPaddingLeft;
-    padding-right: $containerPaddingRight;
+    padding-inline-start: $containerPaddingLeft;
+    padding-inline-end: $containerPaddingRight;
+
+    @include tablets-lg {
+        padding-inline-start: $containerPaddingMediaLeft;
+        padding-inline-end: $containerPaddingMediaRight;
+    }
 
 }

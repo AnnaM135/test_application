@@ -1,0 +1,13 @@
+.__img {
+    width: 120px;
+    height: 35px;
+
+    @include tablets-lg {
+        width: 100px;
+        height: 30px;
+    }
+
+    @include tablets-md {
+        width: 80px;
+    }
+}

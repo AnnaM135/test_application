@@ -1,0 +1,7 @@
+.__list {
+    display: flex;
+
+    @include tablets-sm {
+        display: none;
+    }
+}

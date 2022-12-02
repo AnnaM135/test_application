@@ -1,0 +1,28 @@
+._{
+    margin-inline-start: 22px;
+    margin-inline-end: 22px;
+
+    @include tablets-lg {
+        margin-inline-start: 15px;
+        margin-inline-end: 15px;
+
+        font-size: 14px;
+    }
+
+    @include tablets-md {
+        margin-inline-start: 8px;
+        margin-inline-end: 8px;
+
+        font-size: 13px;
+    }
+
+    &_link {
+        @include font-rubik(400);
+        color: $white;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+}

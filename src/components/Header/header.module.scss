@@ -1,0 +1,90 @@
+._{
+    width: 100%;
+    background-color: $orange;
+    position: fixed;
+
+    &_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+
+        &_icons{
+            display: flex;
+        }
+
+        &_menuIcon {
+            width: 33px;
+            margin-inline-end: 20px;
+            cursor: pointer;
+            display: none;
+
+            @include tablets-sm {
+                display: block;
+            }
+
+            &::before,
+            &::after,
+            &_trans {
+                background: $white;
+                content: "";
+                display: block;
+                height: 2px;
+                border-radius: 3px;
+                margin: 6px 0;
+                transition: 0.5s;
+            }
+
+            &:hover::before {
+                transform: translateY(10px) rotate(135deg);
+            }
+
+            &:hover::after {
+                transform: translateY(-7px) rotate(-135deg);
+            }
+            &:hover &_trans {
+                transform: scale(0);
+            }
+        }
+    }
+
+    &_basket {
+        position: relative;
+        width: 40px;
+        height: 40px;
+
+        @include tablets-lg {
+            width: 35px;
+            height: 32px;
+        }
+
+        &_img{
+            width: 32px;
+            height: 32px;
+
+            @include tablets-lg {
+                width: 25px;
+                height: 25px;
+            }
+        }
+        
+
+        &_notification {
+            position: absolute;
+            right: 2px;
+            bottom: 3px;
+
+            width: 16px;
+            height: 16px;
+            display: grid;
+            place-items: center;
+
+            border-radius: 50%;
+            background-color: $orange;
+
+            color: $black;
+            font-size: 12px;
+            @include font-rubik(400);
+        }
+    }
+}
