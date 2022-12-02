@@ -1,0 +1,87 @@
+._ {
+    margin-block-start: 80px;
+
+    width: 100%;
+    min-height: 800px;
+    
+    background: $orange url("../../assets/images/bg.png") no-repeat;
+    background-size: cover;
+    
+    &_content{
+        display: flex;
+    }
+    
+    &_feautures{   
+        margin-block-start: 90px;
+        width: 80%;
+        &_top {
+            width: 60%;
+        }
+        &_head {
+            @include font-rubik(700);
+            font-size: 144px;
+            line-height: 152px;
+            color: $white;
+        }
+        &_description {
+            @include font-rubik(400);
+            font-size: 24px;
+            color: #000000;
+            margin-block-start: 20px;
+        }
+        &_bottom{
+            margin-block-start: 120px;
+            width: 40%;
+        }
+        &_title {
+            @include font-rubik(700);
+            font-size: 36px;
+            line-height: 28px;
+            color: #000000;
+        }
+        &_quotes {
+            @include font-rubik(400);
+            font-size: 18px;
+            color: #000000;
+            margin-block-start: 15px;
+        }
+    }
+
+    &_compositionImages {
+        width: 20%;
+        margin-block-start: 60px;
+        position: relative;
+        z-index: 99;
+
+        &_nootris {
+            width: 225px;
+            height: 635px;
+            
+        }
+
+        &_ginger{
+            position: absolute;
+            z-index: -999;
+            bottom: 30px;
+            right: -70px;
+            width: 500px;
+            height: 410px;
+
+        }
+
+        &_lemon{
+            position: absolute;
+            width: 530px;
+            height: 460px;
+            left: -400px;
+            bottom: -200px;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+       
+    }
+}
