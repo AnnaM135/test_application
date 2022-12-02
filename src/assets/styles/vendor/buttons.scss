@@ -1,0 +1,17 @@
+.main_button {
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+    padding-inline-start: 32px;
+    padding-inline-end: 32px;
+
+    border: none;
+    border-radius: 7px;
+    background: $orange;
+
+    
+    text-decoration: unset;
+    color: #000000;
+    @include font-rubik(400);
+
+    cursor: pointer;
+}

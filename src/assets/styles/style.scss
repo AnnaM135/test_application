@@ -1,0 +1,101 @@
+/* Default styles */
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: $grey;
+    color: white;
+}
+
+html {
+    font-size: $baseFontSize;
+    overflow-x: hidden !important;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    // min-height: -webkit-fill-available;
+
+    color: $black;
+    line-height: 1.42;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    position: relative;
+
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: $black;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $grey;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid $grey;  /* creates padding around scroll thumb */
+}
+
+body,
+html {
+    background-color: $black;  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    max-width: $containerWidth;
+    margin: 0 auto;
+    padding-left: $containerPaddingLeft;
+    padding-right: $containerPaddingRight;
+
+}
