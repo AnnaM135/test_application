@@ -2,6 +2,8 @@
     margin-inline-start: 22px;
     margin-inline-end: 22px;
 
+    
+
     @include tablets-lg {
         margin-inline-start: 15px;
         margin-inline-end: 15px;
@@ -16,12 +18,23 @@
         font-size: 13px;
     }
 
+    @include tablets-sm {
+        padding: 30px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+
     &_link {
         @include font-rubik(400);
         color: $white;
         text-decoration: none;
         &:hover{
             text-decoration: underline;
+        }
+
+        @include tablets-sm {
+            text-align: center;
+            
         }
     }
 

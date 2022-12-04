@@ -1,7 +1,75 @@
-.__list {
+._ {
     display: flex;
 
-    @include tablets-sm {
+    &_list {
+        display: flex;
+
+        @include tablets-sm{
+            display: none;
+        }
+    }
+    
+    &_mobile {
+        @include tablets-sm {
+            position: absolute;
+            display: block;
+            background-color: $black;
+            left: 0;
+            top: 75px;
+            transition: all 0.5s ease-out;
+            width: 100%;
+        }
+    }
+
+    &_icon {
         display: none;
+
+        @include tablets-sm {
+            display: block;
+            position: absolute;
+            font-size: 30px;
+            color: $white;
+            top: 25px;
+            right: 80px;
+        }
+
+        &_close {
+            width: 33px;
+            cursor: pointer;
+            &::before,
+            &::after
+             {
+                content: "";
+                background: $white;
+                display: block;
+                height: 2px;
+                border-radius: 3px;
+                margin: 6px 0;
+                transition: 0.5s;
+            }
+            &::before{
+                transform: translateY(6px) rotate(135deg);
+            }
+            &::after {
+                transform: translateY(-3px) rotate(-135deg);
+            }
+            
+        }
+
+        &_mobile {
+            width: 33px;
+            cursor: pointer;
+            &::before,
+            &::after,
+            &_trans {
+                content: "";
+                background: $white;
+                display: block;
+                height: 2px;
+                border-radius: 3px;
+                margin: 6px 0;
+                transition: 0.5s;
+            }
+        }
     }
 }
