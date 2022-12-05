@@ -22,12 +22,12 @@ export function Discount() {
           </div>
           <div className={_.__cards_card}>
             <div className={_.__cards_product}>
-            <img
-              className={_.__cards_product_rotate}
-              src={Nootris}
-              alt="Nootris"
-            />
-          </div>
+              <img
+                className={_.__cards_product_rotate}
+                src={Nootris}
+                alt="Nootris"
+              />
+            </div>
           </div>
           <div className={_.__cards_card}>
             <img className={_.__cards_card_img} src={Virus} alt="Virus" />
